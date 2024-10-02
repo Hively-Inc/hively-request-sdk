@@ -6,11 +6,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "preversion": "npm run build",
+    "preversion": "npm run build && git add dist/ && git commit -m 'Build: update dist files'",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch",
-    "postversion": "git add dist/ && git commit -m 'Build: update dist files' && git push"
+    "postversion": "git push"
   },
   "keywords": [],
   "author": "",
