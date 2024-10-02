@@ -15,6 +15,7 @@ export interface BookingDetails {
     bookingTitle?: string;
     description?: string;
     timeSpan: TimeDetails;
+    desiredCapacity?: number;
     spaces: SpaceDetails[];
     resources: ResourceDetails[];
 }
